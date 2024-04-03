@@ -1,0 +1,130 @@
+.product-details {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    padding: 40px;
+
+    .image-viewer {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .switcher {
+
+            display: flex;
+            gap: 5px;
+
+            button {
+                padding: 0px 0px 0px 0px;
+            }
+
+            button img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 5px;
+                border: none;
+            }
+
+            .switch {
+                background: #b8b8b8;
+                border-radius: 5px;
+                border: none;
+                opacity: 50%;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    opacity: 100%;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+
+            .active {
+                opacity: 100%;
+                transition: all 0.3s ease-in-out;
+            }
+
+        }
+    }
+
+    .details {
+
+        .product-info {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .pill-view-main {
+
+                display: flex;
+                flex-direction: column;
+
+                .pill-view-head {
+                    font-weight: 600;
+                }
+
+                .pill-view {
+                    display: flex;
+                    gap: 10px;
+
+                    .pill {
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        background-color: #000000;
+                        color: white;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+        }
+
+        .quantity-selector {
+            display: flex;
+            background: #000;
+            width: max-content;
+            border-radius: 5px;
+            margin-top: 30px;
+
+            .quantity-selector-button {
+                font-size: 18px;
+                padding: 10px 20px;
+                border: none;
+                background-color: transparent;
+                color: white;
+                cursor: pointer;
+                width: max-content;
+                transition: background-color 0.3s ease;
+            }
+        }
+
+        .add-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,110 @@
+.cart-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .cart-item {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        justify-content: space-between;
+
+        .product-info {
+
+            display: flex;
+            gap: 1rem;
+
+            img {
+                height: 150px;
+                width: 150px;
+                background-color: #000000;
+                aspect-ratio: 1/1;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+
+            .cart-item-details {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+
+                h4 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+
+            }
+
+        }
+
+        .order-info {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            // justify-content: space-between;
+
+            .cart-item-details-final {}
+
+            .options {
+                display: flex;
+                gap: 1rem;
+                height: max-content;
+                margin-left: 20px;
+
+                .buttons {
+                    width: max-content;
+                    height: max-content;
+                    background: #f2f2f2;
+                    border: none;
+                    text-decoration: none;
+                    color: #000000;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all ease-in-out 300ms;
+
+                    &:first-child:hover {
+                        background: #ff0000;
+                        color: #ffffff;
+                        transition: all ease-in-out 300ms;
+                    }
+
+                    &:last-child:hover {
+                        background: #003cff;
+                        color: #ffffff;
+                        transition: all ease-in-out 300ms;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.buy-button {
+    display: block; 
+    margin: 0 auto; 
+    padding: 8px 16px; 
+    font-size: 14px; 
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #0074d9;
+    color: white;
+    &:hover {
+        background-color: #005ea6;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+}

@@ -1,0 +1,156 @@
+// .AdminPage{
+//   height:600px;
+// }
+// .ReactModal {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #f0f0f0;
+//     border-radius: 10px;
+//     padding: 20px;
+//     width: 300px;
+//     height: auto;
+//     margin: 0 auto;
+  
+//     form {
+//       display: flex;
+//       flex-direction: column;
+//       width: 100%;
+  
+//       label {
+//         margin-bottom: 10px;
+//         font-size: 16px;
+//         color: #333;
+  
+//         input {
+//           width: 80%;
+//           padding: 10px;
+//           border: 1px solid #ccc;
+//           border-radius: 5px;
+//         }
+//       }
+//     }
+  
+//     .ModalButton {
+//       margin-top: 20px;
+//       padding: 10px;
+//       border: none;
+//       border-radius: 5px;
+//       background-color: #007BFF;
+//       color: white;
+//       cursor: pointer;
+//       transition: background-color 0.3s ease;
+  
+//       &:hover {
+//         background-color: #0056b3;
+//       }
+  
+//       &:first-child {
+//         margin-right: 10px;
+//       }
+  
+//       &:last-child {
+//         background-color: #dc3545;
+  
+//         &:hover {
+//           background-color: #c82333;
+//         }
+//       }
+//     }
+//   }
+//   .DELETE {
+//     padding: 10px 20px;
+//     border: none;
+//     border-radius: 5px;
+//     background-color: #dc3545;
+//     color: white;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease;
+  
+//     &:hover {
+//       background-color: #c82333;
+//     }
+//   }
+  
+.AdminPage {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .ReactModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  
+      label {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333;
+  
+        input {
+          width: 80%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+    }
+  
+    .ModalButton {
+      margin-top: 20px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+  
+      &:first-child {
+        margin-right: 10px;
+      }
+  
+      &:last-child {
+        background-color: #dc3545;
+  
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  }
+  
+  .DELETE {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #c82333;
+    }
+  }
+  

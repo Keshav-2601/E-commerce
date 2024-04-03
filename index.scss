@@ -1,0 +1,106 @@
+$color_1: #212529;
+$color_2: black;
+$color_3: white;
+$color_4: #000000;
+$color_5: #fff;
+$font-family_1: monospace;
+$background-color_1: #E4E4E4;
+$background-color_2: #f2f3f4;
+$background-color_3: #f8f8f8;
+$background-color_4: #e8e8e8;
+$background-color_5: black;
+$background-color_6: #d3d4d4db;
+$background-color_7: #ff0000;
+$background-color_8: #ffffff;
+$background-color_9: #0056b3;
+$background-color_10: #004499;
+$background-color_11: white;
+$background-color_12: #f9f9f9;
+$background-color_13: lightslategray;
+$background-color_14: #4CAF50;
+$background-color_15: #1e211e;
+$border-color_1: #bddaf9;
+$border-color_2: #004499;
+$border-color_3: #003670;
+$border-color_4: #4CAF50;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.userInputForm {
+    height: 500px;
+    width: fit-content;
+
+    label {
+        position: relative;
+        left: 630px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        width: 200px;
+        height: 35px;
+        margin-top: 5px;
+        padding: 0 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #c4c4c4;
+        position: relative;
+        left: 630px;
+
+        &:focus {
+            border-color: $border-color_1;
+            box-shadow: 0 0 8px 0 #007bff;
+            outline: none;
+        }
+    }
+
+    button {
+        width: 100px;
+        margin: 10px auto;
+        background-color: #4CAF50;
+        ;
+        border: 1px solid transparent;
+        color: $color_1;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        padding: 0.375rem 0.75rem;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        left: 455px;
+        top: 100px;
+        font-weight: 400;
+        line-height: 1.5;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        &:hover {
+            color: $color_4;
+            background-color: $background-color_8;
+            border-color: $border-color_2;
+        }
+
+        &:focus {
+            color: $color_5;
+            background-color: $background-color_9;
+            border-color: $border-color_2;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+        }
+
+        &:active {
+            color: $color_5;
+            background-color: $background-color_10;
+            border-color: $border-color_3;
+        }
+    }
+}
+
+.itemincart {
+    height: 600px;
+    width: fit-content;
+}
